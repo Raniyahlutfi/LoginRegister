@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#90A955">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="ZeroT"
+                android:textSize="50dp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/gambar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/gambar1"/>
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gambar1"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:text="SELAMAT DATANG"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text1"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="DI ZeroT!"
+            android:textSize="50dp"/>
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/text2"
+            android:layout_marginTop="20dp"
+            android:textSize="25dp"
+            android:backgroundTint="#90A955"
+            android:onClick="startButtonClicked"
+            android:text="Start"/>
+
+        <TextView
+            android:id="@+id/feature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="250dp"
+            android:text="FEATURE"
+            android:textSize="35dp"/>
+
+        <ImageView
+            android:id="@+id/gambar2"
+            android:layout_width="359dp"
+            android:layout_height="228dp"
+            android:layout_below="@+id/feature"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/gambar2"/>
+
+        <TextView
+            android:id="@+id/js"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_below="@+id/gambar2"
+            android:text="Jenis Sampah"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/pjs"
+            android:layout_width="135dp"
+            android:layout_height="77dp"
+            android:layout_below="@+id/js"
+            android:layout_gravity="center"
+            android:text="Lihat semua jenis sampah yang kami terima untuk di daur ulang"
+            android:textAlignment="center"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/gambar3"
+            android:layout_width="359dp"
+            android:layout_height="228dp"
+            android:layout_below="@+id/pjs"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/gambar3"/>
+
+        <TextView
+            android:id="@+id/jl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gambar3"
+            android:layout_gravity="center"
+            android:text="Jual Sampah"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/pjl"
+            android:layout_width="135dp"
+            android:layout_height="82dp"
+            android:layout_below="@+id/jl"
+            android:layout_gravity="center"
+            android:text="Anda kini dapat menjual sampah kalian untuk kami daur ulang"
+            android:textAlignment="center"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/gambar4"
+            android:layout_width="359dp"
+            android:layout_height="228dp"
+            android:layout_below="@+id/pjl"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/gambar4" />
+
+        <TextView
+            android:id="@+id/lbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gambar4"
+            android:layout_gravity="center"
+            android:text="Lokasi Bank Sampah"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/plbs"
+            android:layout_width="138dp"
+            android:layout_height="59dp"
+            android:layout_below="@+id/lbs"
+            android:layout_gravity="center"
+            android:text="Lihat lokasi bank sampah terdekat dari tempat Anda"
+            android:textAlignment="center"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/plbs"
+            android:layout_gravity="center"
+            android:text="About"
+            android:textSize="40dp"
+            android:layout_marginTop="250dp" />
+
+        <TextView
+            android:layout_width="420dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/about"
+            android:layout_gravity="center"
+            android:text="ZeroT adalah sebuah platform di mana kita dapat menjual sampah untuk di daur ulang. blablablabkadb"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:layout_marginBottom="50dp" />
+
+    </LinearLayout>
+</ScrollView>

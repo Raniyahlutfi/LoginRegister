@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#90A955">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="ZeroT"
+                android:textSize="50sp"/>
+
+            <Button
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:backgroundTint="#90A955"
+                android:text="Profil"
+                android:onClick="profileClicked" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:textSize="20sp"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="@color/black"
+                android:text="Home"
+                android:onClick="homeClicked" />
+
+            <Button
+                android:id="@+id/js1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="@color/black"
+                android:text="Jenis Sampah"
+                android:onClick="jsClicked" />
+
+            <Button
+                android:id="@+id/jl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/js1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="27sp"
+                android:backgroundTint="#90A955"
+                android:text="Jual Sampah"
+                android:onClick="jl1Clicked" />
+
+            <Button
+                android:id="@+id/lbs1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jl1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="@color/black"
+                android:text="Lokasi Bank Sampah"
+                android:onClick="lbs1Clicked" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/kardus"
+            android:layout_width="358dp"
+            android:layout_height="234dp"
+            android:layout_marginTop="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/kardus" />
+
+        <TextView
+            android:id="@+id/kardus1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/kardus"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Kardus"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hargakardus"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_below="@+id/kardus1"
+            android:layout_gravity="center"
+            android:text="Rp. 3.000/Kg"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/hargakardus"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Deskripsi"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/deskripsi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deskripsi"
+            android:layout_gravity="center"
+            android:text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint magnam ab magni voluptates voluptatum nesciunt, vel a qui earum explicabo possimus odit assumenda consectetur quia. Temporibus delectus sit nostrum. Ipsam."
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/kardus3"
+            android:layout_width="358dp"
+            android:layout_height="234dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/deskripsi1"
+            android:layout_gravity="center"
+            android:src="@drawable/jualsampah" />
+
+        <TextView
+            android:id="@+id/kuantitas"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/kardus3"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Kuantitas"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <NumberPicker
+            android:layout_width="135dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/kuantitas"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#90A955"
+            android:onClick="jlClicked"
+            android:text="Jual"
+            android:textSize="27sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

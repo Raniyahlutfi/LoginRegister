@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#90A955">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="ZeroT"
+                android:textSize="50sp"/>
+
+            <Button
+                android:id="@+id/profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="10dp"
+                android:textSize="20sp"
+                android:backgroundTint="#90A955"
+                android:text="Profil"
+                android:onClick="profileClicked" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:textSize="20sp"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="@color/black"
+                android:text="Home"
+                android:onClick="homeClicked" />
+
+            <Button
+                android:id="@+id/js1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="27sp"
+                android:backgroundTint="#90A955"
+                android:text="Jenis Sampah"
+                android:onClick="jsClicked" />
+
+            <Button
+                android:id="@+id/jl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/js1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="@color/black"
+                android:text="Jual Sampah"
+                android:onClick="jl1Clicked" />
+
+            <Button
+                android:id="@+id/lbs1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/jl1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="@color/black"
+                android:text="Lokasi Bank Sampah"
+                android:onClick="lbs1Clicked" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/gjenissampah"
+            android:layout_width="wrap_content"
+            android:layout_height="169dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/gjenissampah" />
+
+        <TextView
+            android:id="@+id/kategoris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gjenissampah"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="KATEGORI SAMPAH"
+            android:textStyle="bold"
+            android:textSize="30sp"/>
+
+        <EditText
+            android:id="@+id/cari"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/oval_button"
+            android:drawableRight="@drawable/baseline_search_24"
+            android:hint="Cari Jenis Sampah"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/kardus"
+            android:layout_width="358dp"
+            android:layout_height="234dp"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/cari"
+            android:layout_gravity="center"
+            android:src="@drawable/kardus" />
+
+        <TextView
+            android:id="@+id/kardus1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/kardus"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Kardus"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kardus2"
+            android:layout_width="135dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/kardus1"
+            android:layout_gravity="center"
+            android:text="stock: 1000kg"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/hargakardus"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_below="@+id/kardus2"
+            android:layout_gravity="center"
+            android:text="Rp. 3.000/Kg"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/plastik"
+            android:layout_width="358dp"
+            android:layout_height="234dp"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/hargakardus"
+            android:layout_gravity="center"
+            android:src="@drawable/plastik" />
+
+        <TextView
+            android:id="@+id/plastik1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/plastik"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Plastik"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/plastik2"
+            android:layout_width="135dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/plastik1"
+            android:layout_gravity="center"
+            android:text="stock: 1000kg"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/hargaplastik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 2.000/Kg"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_below="@+id/plastik2"
+            android:textSize="23sp"/>
+
+        <ImageView
+            android:id="@+id/botolp"
+            android:layout_width="358dp"
+            android:layout_height="234dp"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/hargaplastik"
+            android:layout_gravity="center"
+            android:src="@drawable/botolp" />
+
+        <TextView
+            android:id="@+id/botolp1"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_below="@+id/botolp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Botol Plastik"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/botolp2"
+            android:layout_width="135dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/botolp1"
+            android:layout_gravity="center"
+            android:text="stock: 1000kg"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/hargabotolp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 3.000/Kg"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_below="@+id/botolp2"
+            android:textSize="23sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="100dp"
+                android:backgroundTint="#90A955"
+                android:onClick="slClicked"
+                android:text="Selengkapnya"
+                android:textSize="27sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
